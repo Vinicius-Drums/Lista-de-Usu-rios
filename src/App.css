@@ -1,0 +1,102 @@
+/* App.css */
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #abacbc, #040628);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.user-list-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.user-list-item {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.add-user-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.add-user-input,
+.add-user-button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.add-user-button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-size: 16px;
+}
+
+.add-user-button:hover {
+  background-color: #535bf2;
+}
+
+a,
+button {
+  margin-top: 10px;
+}
+
+.user-list-item::before {
+  content: "\2022";
+  margin-right: 5px;
+  color: #1a1a1a;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Adicionado estilo para a imagem */
+.user-list-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
